@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body style="background-color: skyblue;">
+    <div class="container">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="myInput" placeholder="Enter your password">
+            <input type="checkbox" onclick="myFunction()"><span style="font-size: 10px;" for="show-password">Show Password</span>
+    
+                        <script>
+                            function myFunction() {
+                              var x = document.getElementById("myInput");
+                              if (x.type === "password") {
+                                x.type = "text";
+                              } else {
+                                x.type = "password";
+                              }
+                            }
+                            </script>
+        </div>
+        <button class="submit-button" id="login-button">Submit</button>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
